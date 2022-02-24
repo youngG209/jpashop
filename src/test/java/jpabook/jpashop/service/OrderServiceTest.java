@@ -82,7 +82,7 @@ class OrderServiceTest {
 
     private Member createMember() {
         Member member = new Member();
-        member.setUsername("회원1");
+        member.setName("회원1");
         member.setAddress(new Address("서울", "경기", "123-123"));
         em.persist(member);
         return member;

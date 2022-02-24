@@ -26,7 +26,7 @@ class MemberServiceTest {
 
         //given
         Member member = new Member();
-        member.setUsername("Lee");
+        member.setName("Lee");
 
         //when
         Long saveId = memberService.join(member);
@@ -40,9 +40,9 @@ class MemberServiceTest {
 
         //given
         Member member1 = new Member();
-        member1.setUsername("Lee");
+        member1.setName("Lee");
         Member member2 = new Member();
-        member2.setUsername("Lee");
+        member2.setName("Lee");
 
         //when
         memberService.join(member1);

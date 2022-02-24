@@ -25,7 +25,7 @@ public class MemberRepositoryTest {
     public void testMember() throws Exception {
         //given
         Member member = new Member();
-        member.setUsername("MemberA");
+        member.setName("MemberA");
 
         //when
         Long saveId = memberRepository.save(member);
@@ -33,7 +33,7 @@ public class MemberRepositoryTest {
 
         //then
         assertThat(findMember.getId()).isEqualTo(member.getId());
-        assertThat(findMember.getUsername()).isEqualTo( member.getUsername());
+        assertThat(findMember.getName()).isEqualTo( member.getName());
         assertThat(findMember).isEqualTo(member);
     }
 }
